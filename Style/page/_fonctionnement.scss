@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.fonctionnement {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  h2 {
+    margin: 0 0 25px 0;
+  }
+  ol {
+    margin: 0;
+  }
+}
+.step {
+  padding: 0;
+  li {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: $main-bg-color;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding: 28px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+  }
+  .step__number {
+    position: absolute;
+    left: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    color: white;
+    background-color: $purple-2;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons {
+    font-size: 1.2rem;
+    color: #7e7e7e;
+  }
+  .icons--purple {
+    color: $purple-2;
+  }
+}

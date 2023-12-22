@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.button {
+  height: 50px;
+  padding: 0 25px;
+  background: $gradiant-color-1;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0px #00000040;
+}

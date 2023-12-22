@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+.like {
+  appearance: unset;
+  padding-top: 20px;
+  padding-right: 25px;
+  font-size: 1.3rem;
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+  }
+  &:checked:before {
+    font-weight: 900;
+    background: $gradiant-color-1;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

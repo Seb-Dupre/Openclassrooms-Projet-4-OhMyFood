@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+.new {
+  position: absolute;
+  right: 30px;
+  padding: 7px 9px;
+  background-color: $green-1;
+  color: $green-2;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
