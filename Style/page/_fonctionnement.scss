@@ -3,6 +3,10 @@
 .fonctionnement {
   padding-top: 50px;
   padding-bottom: 70px;
+  @media (min-width: $desktop) {
+    padding-bottom: 50px;
+  }
+
   h2 {
     margin: 0 0 25px 0;
   }
@@ -12,19 +16,30 @@
 }
 .step {
   padding: 0;
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
   li {
-    display: block;
-    font-size: 1rem;
+    height: 72px;
+    font-size: $fontsize_2;
     font-weight: 500;
     background-color: $main-bg-color;
     margin-left: 20px;
     margin-bottom: 25px;
-    padding: 28px 0;
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     box-shadow: 0px 4px 15px 0px #00000026;
+    @media (min-width: $desktop) {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
   }
   .step__number {
     position: absolute;
@@ -40,9 +55,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: $desktop) {
+      position: relative;
+      left: -0.75rem;
+    }
   }
   .icons {
-    font-size: 1.2rem;
+    font-size: $fontsize_4;
     color: #7e7e7e;
   }
   .icons--purple {

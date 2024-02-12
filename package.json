@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "dev": "parcel la_palette_du_gout.html",
+    "build": "parcel la_palette_du_gout.html"
   },
   "keywords": [],
   "author": "",

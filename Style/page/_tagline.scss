@@ -10,14 +10,22 @@
   h1 {
     margin-bottom: 10px;
     max-width: 275px;
-    font-size: 1.5rem;
+    font-size: $fontsize_6;
+    font-weight: $fontweight_4;
+    @media (min-width: $desktop) {
+      max-width: none;
+      font-size: $fontsize_7;
+    }
   }
   p {
     margin: 0;
     margin-bottom: 30px;
     max-width: 315px;
-    font-size: 1.1rem;
+    font-size: $fontsize_3;
     font-weight: 300;
     color: #353535;
+    @media (min-width: $desktop) {
+      max-width: none;
+    }
   }
 }

@@ -1,9 +1,11 @@
 @use "../abstracts" as *;
+.like-button {
+  display: flex;
+  align-items: center;
+}
 .like {
   appearance: unset;
-  padding-top: 20px;
-  padding-right: 25px;
-  font-size: 1.3rem;
+  font-size: $fontsize_5;
   &:before {
     font-family: "Font Awesome 5 Free";
     content: "\f004";
@@ -14,4 +16,9 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+.like_position_1 {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
 }
