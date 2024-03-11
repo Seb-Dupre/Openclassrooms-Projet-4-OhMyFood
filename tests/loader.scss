@@ -1,0 +1,52 @@
+@use "./abstracts";
+@use "./base";
+@use "./components";
+@use "./layouts";
+@use "./page";
+@use "./utilities";
+
+/**** jump gradient
+.letters {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-bg-color;
+  flex-shrink: 0;
+  animation: fold 10000ms;
+  @keyframes fol {
+    90% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-2000px);
+    }
+  }
+}
+
+.letter {
+  flex: 1;
+  padding: 15px;
+  font-family: "Shrikhand", serif;
+  background-image: $gradiant-color-1;
+  color: transparent;
+  background-clip: text;
+
+
+  font-size: 4rem;
+  animation: rise 0ms 10 alternate;
+  @keyframes rise {
+      100% {
+          transform: translateY(-50px);
+        }
+    }
+    @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+        }
+    }
+}
+****/

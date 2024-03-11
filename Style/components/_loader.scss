@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+/**** loader ****/
+.loader {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  animation: loading-fade 750ms;
+  animation-delay: 2250ms;
+  animation-fill-mode: forwards;
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 0.3rem solid #eaeaea;
+    border-top-color: $purple-2;
+    border-radius: 50%;
+    animation: loading 750ms ease infinite;
+  }
+  &__logo {
+    padding: 16px;
+    padding-top: 45px;
+    font-family: "Shrikhand", serif;
+    font-size: 50px;
+    background-image: $gradiant-color-1;
+    color: transparent;
+    background-clip: text;
+    @media (min-width: $desktop) {
+      font-size: 80px;
+    }
+  }
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+@keyframes loading-fade {
+  from {
+    opacity: 100%;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

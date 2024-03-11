@@ -18,6 +18,10 @@
   </head>
 
   <body>
+    <body>
+      <div class="loader">
+        <div class="loader__logo">Ohmyfood</div>
+      </div>
     <div class="main-container-1">
       <header>
         <div class="logo">
@@ -38,37 +42,37 @@
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </p>
           <nav class="text-center">
-            <button class="button-1">Explorer nos restaurants</button>
+            <form action="#restaurants-selection">
+              <button class="button-1">Explorer nos restaurants</button>
+            </form>
           </nav>
         </section>
         <section class="fonctionnement">
           <div class="container-1">
             <h2>Fonctionnement</h2>
             <ol class="step">
-              <li>
-                <div>
-                  <p class="step__number">1</p>
+              <li class="step-card">
+                <div class="step__number">1
                 </div>
                 <i class="fa-solid fa-mobile-screen-button icons"></i>
                 Choisissez un restaurant
               </li>
-              <li>
-                <div>
-                  <p class="step__number">2</p>
+              <li class="step-card">
+                <div class="step__number">2
+
                 </div>
                 <i class="fa-solid fa-list-ul icons"></i> Composez votre menu
               </li>
-              <li>
-                <div>
-                  <p class="step__number">3</p>
+              <li class="step-card">
+                <div class="step__number">3
                 </div>
-                <i class="fa-solid fa-store icons icons--purple"></i> Dégustez
+                <i class="fa-solid fa-store icons"></i> Dégustez
                 au restaurant
               </li>
             </ol>
           </div>
         </section>
-        <section class="restaurants-selection">
+        <section class="restaurants-selection" id="restaurants-selection">
           <div class="container-1">
             <h2 class="">Restaurants</h2>
             <div class="restaurant-cards">
@@ -86,14 +90,14 @@
                       <h3>La palette du goût</h3>
                       <p>Ménilmontant</p>
                     </div>
-                  </div>
                 </a>
-                <div class="like-button">
-                  <input
-                    type="checkbox"
-                    id="like-1"
-                    class="like like_position_1"
-                  />
+                <div class="like_position_1">
+                  <div class="like-button ">
+                    <input type="checkbox" id="like-1" class="like-input" />
+                    <label class="like-label heart" for="like-1">
+                      <i class="fa-solid fa-heart "></i
+                    ></label>
+                  </div>
                 </div>
               </article>
               <article class="card">
@@ -112,12 +116,13 @@
                     </div>
                   </div>
                 </a>
-                <div class="like-button">
-                  <input
-                    type="checkbox"
-                    id="like-2"
-                    class="like like_position_1"
-                  />
+                <div class="like_position_1">
+                  <div class="like-button ">
+                    <input type="checkbox" id="like-2" class="like-input" />
+                    <label class="like-label heart" for="like-2">
+                      <i class="fa-solid fa-heart "></i
+                    ></label>
+                  </div>
                 </div>
               </article>
               <article class="card">
@@ -135,12 +140,13 @@
                     </div>
                   </div>
                 </a>
-                <div class="like-button">
-                  <input
-                    type="checkbox"
-                    id="like-3"
-                    class="like like_position_1"
-                  />
+                <div class="like_position_1">
+                  <div class="like-button ">
+                    <input type="checkbox" id="like-3" class="like-input" />
+                    <label class="like-label heart" for="like-3">
+                      <i class="fa-solid fa-heart "></i
+                    ></label>
+                  </div>
                 </div>
               </article>
               <article class="card">
@@ -158,12 +164,13 @@
                     </div>
                   </div>
                 </a>
-                <div class="like-button">
-                  <input
-                    type="checkbox"
-                    id="like-4"
-                    class="like like_position_1"
-                  />
+                <div class="like_position_1">
+                  <div class="like-button ">
+                    <input type="checkbox" id="like-4" class="like-input" />
+                    <label class="like-label heart" for="like-4">
+                      <i class="fa-solid fa-heart "></i
+                    ></label>
+                  </div>
                 </div>
               </article>
             </div>
@@ -198,7 +205,7 @@
                   <a href="#">Mentions légales</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="mailto:Ohmyfood@example.com">Contact</a>
                 </li>
               </ul>
             </div>

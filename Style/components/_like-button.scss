@@ -1,24 +1,47 @@
 @use "../abstracts" as *;
+
 .like-button {
+  position: relative;
   display: flex;
   align-items: center;
 }
-.like {
-  appearance: unset;
+.like-button input.like-input {
+  position: absolute;
+  height: $fontsize_5;
+  width: 100%;
+  appearance: none;
+}
+.heart {
+  position: relative;
   font-size: $fontsize_5;
-  &:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f004";
-  }
-  &:checked:before {
-    font-weight: 900;
-    background: $gradiant-color-1;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  color: transparent;
+  background-clip: text;
+  background-image: $gradiant-like-button;
+  background-size: 200% 200%;
+  transition: all 1000ms;
+}
+.heart::after {
+  z-index: 0;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: 400;
+  inset: 0;
+  color: black;
+}
+.like-input:checked + .heart {
+  background-position-y: 100%;
+  &:after {
+    opacity: 0;
+    transition-duration: 220ms;
   }
 }
 .like_position_1 {
   position: absolute;
   right: 25px;
   bottom: 30px;
+}
+.like_position_2 {
+  padding-right: 40px;
 }

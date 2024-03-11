@@ -21,25 +21,24 @@
     justify-content: center;
     gap: 1.5rem;
   }
-
-  li {
-    height: 72px;
-    font-size: $fontsize_2;
-    font-weight: 500;
-    background-color: $main-bg-color;
-    margin-left: 20px;
-    margin-bottom: 25px;
-    border-radius: 20px;
+}
+.step-card {
+  height: 72px;
+  font-size: $fontsize_2;
+  font-weight: 500;
+  background-color: $main-bg-color;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0px 4px 15px 0px #00000026;
+  @media (min-width: $desktop) {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0px 4px 15px 0px #00000026;
-    @media (min-width: $desktop) {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-    }
+    justify-content: flex-start;
   }
   .step__number {
     position: absolute;
@@ -64,7 +63,9 @@
     font-size: $fontsize_4;
     color: #7e7e7e;
   }
-  .icons--purple {
-    color: $purple-2;
+  &:hover {
+    .icons {
+      color: $purple-2;
+    }
   }
 }

@@ -1,3 +1,8 @@
 .text-center {
   text-align: center;
 }
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

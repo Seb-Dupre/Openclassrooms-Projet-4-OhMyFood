@@ -11,3 +11,8 @@ $gradiant-color-1: linear-gradient(
   $purple-2 -11.44%,
   $purple-1 123.93%
 );
+$gradiant-like-button: linear-gradient(
+  transparent 50%,
+  $purple-2 50%,
+  $purple-1
+);
