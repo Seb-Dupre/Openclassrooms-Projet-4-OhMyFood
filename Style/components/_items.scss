@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+.items {
+  margin: 0;
+  padding-left: 0;
+  .items__card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 12px;
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px #0000001a;
+    opacity: 0%;
+    animation-name: card-show-up;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
+    @media (min-width: $desktop) {
+      min-width: 634px;
+    }
+    @keyframes card-show-up {
+      from {
+        opacity: 0%;
+      }
+      to {
+        opacity: 100%;
+      }
+    }
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        animation-delay: 500ms * $i;
+      }
+    }
+
+    .items__content {
+      overflow: hidden;
+      padding: 13.5px;
+      width: 100%;
+    }
+    .items__input {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      appearance: none;
+    }
+    .items__label {
+      border-radius: 0 15px 15px 0;
+      flex: 0 0 0;
+      min-width: 0px;
+      background-color: #99e2d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: min-width 1000ms 100ms;
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f058";
+        color: white;
+        font-weight: 900;
+        font-size: $fontsize_6;
+        opacity: 0;
+        transition: opacity 1000ms 100ms;
+      }
+    }
+    .items__input:checked + .items__label {
+      min-width: 60px;
+      &:before {
+        opacity: 1;
+      }
+    }
+    .items__name {
+      margin: 0 0 5px 0;
+      font-weight: $fontweight_3;
+    }
+    .items__details {
+      margin: 0;
+      font-weight: $fontweight_1;
+    }
+    .items__price {
+      align-self: flex-end;
+      margin: 0;
+      padding: 13.5px;
+    }
+  }
+}

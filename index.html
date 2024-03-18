@@ -26,7 +26,7 @@
       <header>
         <div class="logo">
           <img
-            src="Images et textes Ohmyfood/images/logo/ohmyfood.png"
+            src="images/logo/ohmyfood.png"
             alt="logo de Ohmyfood"
           />
         </div>
@@ -37,33 +37,33 @@
           <p>Paris, Belleville</p>
         </section>
         <section class="tagline text-center padding-bottom-1">
-          <h1>Réservez le menu qui vous convient</h1>
-          <p>
+          <h1 class="tagline__main">Réservez le menu qui vous convient</h1>
+          <p class="tagline__sub">
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </p>
           <nav class="text-center">
-            <form action="#restaurants-selection">
+            <form action="#selection">
               <button class="button-1">Explorer nos restaurants</button>
             </form>
           </nav>
         </section>
         <section class="fonctionnement">
           <div class="container-1">
-            <h2>Fonctionnement</h2>
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
             <ol class="step">
-              <li class="step-card">
+              <li class="step__card">
                 <div class="step__number">1
                 </div>
                 <i class="fa-solid fa-mobile-screen-button icons"></i>
                 Choisissez un restaurant
               </li>
-              <li class="step-card">
+              <li class="step__card">
                 <div class="step__number">2
 
                 </div>
                 <i class="fa-solid fa-list-ul icons"></i> Composez votre menu
               </li>
-              <li class="step-card">
+              <li class="step__card">
                 <div class="step__number">3
                 </div>
                 <i class="fa-solid fa-store icons"></i> Dégustez
@@ -72,23 +72,23 @@
             </ol>
           </div>
         </section>
-        <section class="restaurants-selection" id="restaurants-selection">
+        <section class="selection" id="selection">
           <div class="container-1">
             <h2 class="">Restaurants</h2>
-            <div class="restaurant-cards">
+            <div class="selection__cards">
               <article class="card">
                 <a href="la_palette_du_gout.html">
                   <p class="new new_1">Nouveau</p>
                   <div>
-                    <img
-                      src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    <img class="card__photo"
+                      src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                       alt="image d'un plat du restaurant La palette du goût"
                     />
                   </div>
                   <div class="card__content">
                     <div>
-                      <h3>La palette du goût</h3>
-                      <p>Ménilmontant</p>
+                      <h3  class="card__title">La palette du goût</h3>
+                      <p class="card__location">Ménilmontant</p>
                     </div>
                 </a>
                 <div class="like_position_1">
@@ -101,18 +101,18 @@
                 </div>
               </article>
               <article class="card">
-                <a href="">
+                <a href="la_note_enchantée.html">
                   <p class="new new_2">Nouveau</p>
                   <div>
-                    <img
-                      src="Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    <img class="card__photo"
+                      src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                       alt="image d'un plat du restaurant La note enchantée"
                     />
                   </div>
                   <div class="card__content">
                     <div>
-                      <h3>La note enchantée</h3>
-                      <p>Charonne</p>
+                      <h3 class="card__title">La note enchantée</h3>
+                      <p class="card__location">Charonne</p>
                     </div>
                   </div>
                 </a>
@@ -126,17 +126,17 @@
                 </div>
               </article>
               <article class="card">
-                <a href="">
+                <a href="a_la_française.html">
                   <div>
-                    <img
-                      src="Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    <img  class="card__photo"
+                      src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                       alt="image d'un plat du restaurant À la française"
                     />
                   </div>
                   <div class="card__content">
                     <div>
-                      <h3>À la française</h3>
-                      <p>Cité Rouge</p>
+                      <h3  class="card__title">À la française</h3>
+                      <p class="card__location">Cité Rouge</p>
                     </div>
                   </div>
                 </a>
@@ -150,17 +150,17 @@
                 </div>
               </article>
               <article class="card">
-                <a href="">
+                <a href="le_delice_des_sens.html">
                   <div>
-                    <img
-                      src="Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    <img class="card__photo"
+                      src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                       alt="image d'un plat du restaurant Le délice des sens"
                     />
                   </div>
                   <div class="card__content">
                     <div>
-                      <h3>Le délice des sens</h3>
-                      <p>Folie-Méricourt</p>
+                      <h3 class="card__title">Le délice des sens</h3>
+                      <p class="card__location">Folie-Méricourt</p>
                     </div>
                   </div>
                 </a>
@@ -177,22 +177,22 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="footer">
         <nav class="footer__nav">
           <div>
             <h3 class="footer__logo">Ohmyfood</h3>
           </div>
-          <div class="footer__ul">
+          <div class="footer__lists">
             <div>
-              <ul>
-                <li>
-                  <a href="#"
+              <ul class="footer__ul">
+                <li class="footer__li">
+                  <a class="footer__links" href="#"
                     ><i class="fa-solid fa-utensils"></i> Proposer un
                     restaurant</a
                   >
                 </li>
-                <li>
-                  <a href="#"
+                <li class="footer__li">
+                  <a class="footer__links" href="#"
                     ><i class="fa-solid fa-handshake-angle"></i> Devenir
                     partenaire</a
                   >
@@ -200,12 +200,14 @@
               </ul>
             </div>
             <div>
-              <ul>
-                <li>
-                  <a href="#">Mentions légales</a>
+              <ul class="footer__ul">
+                <li class="footer__li">
+                  <a class="footer__links" href="#">Mentions légales</a>
                 </li>
-                <li>
-                  <a href="mailto:Ohmyfood@example.com">Contact</a>
+                <li class="footer__li">
+                  <a class="footer__links" href="mailto:Ohmyfood@example.com"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>

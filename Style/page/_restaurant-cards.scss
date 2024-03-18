@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
-.restaurants-selection {
+.selection {
   background-color: $main-bg-color;
   padding-top: 50px;
   padding-bottom: 70px;
@@ -7,17 +7,13 @@
     padding-bottom: 30px;
     padding-top: 30px;
   }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
-.restaurant-cards {
-  @media (min-width: $desktop) {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px 100px;
+  &__cards {
+    @media (min-width: $desktop) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px 100px;
+    }
   }
 }
 .card {
@@ -29,7 +25,7 @@
     padding-bottom: 0;
   }
 
-  img {
+  &__photo {
     border-radius: 15px 15px 0px 0px;
     height: 174px;
     width: 100%;
@@ -37,18 +33,18 @@
       max-width: 500px;
     }
   }
-  .card__content {
+  &__content {
     padding-left: 13px;
     background-color: white;
     border-radius: 0px 0px 15px 15px;
     display: flex;
-    h3 {
-      margin-top: 16px;
-      margin-bottom: 5px;
-    }
-    p {
-      margin: 0;
-      padding-bottom: 15px;
-    }
+  }
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 5px;
+  }
+  &__location {
+    margin: 0;
+    padding-bottom: 15px;
   }
 }

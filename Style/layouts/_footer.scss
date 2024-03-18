@@ -1,26 +1,25 @@
 @use "../abstracts" as *;
-footer {
+.footer {
   background-color: #353535;
   padding-bottom: 6px;
   @media (min-width: $desktop) {
     padding-top: 60px;
     padding-bottom: 30px;
   }
-}
-
-.footer__nav {
-  padding-left: 20px;
-  @media (min-width: $desktop) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+  &__nav {
+    padding-left: 20px;
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
   }
 
-  .footer__logo {
+  &__logo {
     font-family: "Shrikhand", serif;
     color: white;
-    font-size: $fontsize_3;
-    font-weight: 400;
+    font-size: $fontsize_5;
+    font-weight: $fontweight_2;
     margin: 0;
     padding-top: 22px;
     padding-bottom: 16px;
@@ -32,7 +31,16 @@ footer {
       margin-right: 50px;
     }
   }
-  ul {
+
+  &__lists {
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  &__ul {
     padding: 0;
     margin: 0;
     @media (min-width: $desktop) {
@@ -42,22 +50,14 @@ footer {
       gap: 10px;
     }
   }
-  li {
+  &__li {
     padding-bottom: 7px;
     @media (min-width: $desktop) {
       padding: 0;
     }
   }
-  a {
+  &__links {
     color: white;
     text-decoration: none;
-  }
-}
-.footer__ul {
-  @media (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
   }
 }

@@ -7,22 +7,22 @@
   justify-content: center;
   align-items: center;
 
-  h1 {
+  &__main {
     margin-bottom: 10px;
     max-width: 275px;
-    font-size: $fontsize_6;
+    font-size: $fontsize_7;
     font-weight: $fontweight_4;
     @media (min-width: $desktop) {
       max-width: none;
-      font-size: $fontsize_7;
+      font-size: $fontsize_8;
     }
   }
-  p {
+  &__sub {
     margin: 0;
     margin-bottom: 30px;
     max-width: 315px;
-    font-size: $fontsize_3;
-    font-weight: 300;
+    font-size: $fontsize_5;
+    font-weight: $fontweight_1;
     color: #353535;
     @media (min-width: $desktop) {
       max-width: none;

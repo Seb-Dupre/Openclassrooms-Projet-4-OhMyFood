@@ -18,7 +18,7 @@
     content: "";
     width: 80px;
     height: 80px;
-    border: 0.3rem solid #eaeaea;
+    border: 5px solid #eaeaea;
     border-top-color: $purple-2;
     border-radius: 50%;
     animation: loading 750ms ease infinite;
@@ -27,12 +27,13 @@
     padding: 16px;
     padding-top: 45px;
     font-family: "Shrikhand", serif;
-    font-size: 50px;
+    font-size: $fontloader_1;
+    font-weight: $fontweight_2;
     background-image: $gradiant-color-1;
     color: transparent;
     background-clip: text;
     @media (min-width: $desktop) {
-      font-size: 80px;
+      font-size: $fontloader_2;
     }
   }
   @keyframes loading {
