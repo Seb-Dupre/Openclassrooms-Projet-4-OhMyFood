@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.hero{  
+  height: 275px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -40px;
+ 
+  @media (min-width: $desktop) {
+    height: 380px;
+    object-position: 50% 60%;
+  }
+}
