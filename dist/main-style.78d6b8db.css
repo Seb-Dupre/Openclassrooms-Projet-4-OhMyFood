@@ -157,7 +157,7 @@ a {
 
 @keyframes loading-fade {
   from {
-    opacity: 100%;
+    opacity: 1;
     visibility: visible;
   }
   to {
@@ -216,17 +216,17 @@ a {
   font-size: 15px;
   font-weight: 300;
   margin: 0 0 0 0;
-  opacity: 0%;
+  opacity: 0;
   animation-name: title-show-up;
   animation-duration: 1000ms;
   animation-fill-mode: forwards;
 }
 @keyframes title-show-up {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 .courses__title--underline {
@@ -247,7 +247,7 @@ a {
   margin-top: 12px;
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
-  opacity: 0%;
+  opacity: 0;
   animation-name: card-show-up;
   animation-duration: 750ms;
   animation-fill-mode: forwards;
@@ -259,10 +259,10 @@ a {
 }
 @keyframes card-show-up {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 .items .items__card:nth-child(1) {
@@ -917,4 +917,4 @@ header {
   }
 }
 
-/*# sourceMappingURL=/main-style.eb920024.css.map */
+/*# sourceMappingURL=main-style.78d6b8db.css.map */
