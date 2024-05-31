@@ -8,31 +8,27 @@
 .like-button input.like-input {
   position: absolute;
   height: $fontsize_5;
-  width: 100%;
   appearance: none;
 }
 .heart {
   position: relative;
   font-size: $fontsize_6;
-  font-weight: 900;
   color: transparent;
   background-clip: text;
   background-image: $gradiant-like-button;
-  background-size: 200% 200%;
+  background-size: 100% 200%;
   transition: all 1000ms;
+  &__empty {
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+    color: black;
+  }
 }
-.heart::after {
-  z-index: 0;
-  position: absolute;
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  font-weight: 400;
-  inset: 0;
-  color: black;
-}
+
 .like-input:checked + .heart {
   background-position-y: 100%;
-  &:after {
+  .heart__empty {
     opacity: 0;
     transition-duration: 220ms;
   }
