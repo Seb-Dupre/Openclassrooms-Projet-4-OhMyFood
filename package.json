@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --public-url ./",
-    "build": "parcel build src/index.html --public-url ./"
+    "dev": "parcel index.html --public-url ./",
+    "build": "parcel build index.html --public-url ./",
+    "sass": "sass --watch ./sass/main-style.scss:./assets/style.css"
   },
   "keywords": [],
   "author": "",
