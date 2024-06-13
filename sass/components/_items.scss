@@ -33,11 +33,13 @@
     }
 
     .items__content {
+      
       overflow: hidden;
       padding: 13.5px;
       width: 100%;
     }
     .items__input {
+      cursor: pointer;
       position: absolute;
       height: 100%;
       width: 100%;

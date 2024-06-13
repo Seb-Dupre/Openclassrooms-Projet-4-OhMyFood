@@ -11,6 +11,7 @@
   font-weight: $fontweight_3;
   box-shadow: 0 4px 10px 0px #00000040;
   transition: all 500ms;
+  cursor: pointer;
   &:hover {
     box-shadow: 0px 4px 15px 0px #00000059;
     opacity: 0.85;

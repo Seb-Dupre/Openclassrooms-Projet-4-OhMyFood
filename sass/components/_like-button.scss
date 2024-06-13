@@ -9,6 +9,7 @@
   position: absolute;
   height: $fontsize_5;
   appearance: none;
+
 }
 .heart {
   position: relative;
@@ -18,7 +19,10 @@
   background-image: $gradiant-like-button;
   background-size: 100% 200%;
   transition: all 1000ms;
+  cursor: pointer;
+  display: block;
   &__empty {
+    padding-top: 1px;
     z-index: 0;
     position: absolute;
     inset: 0;
@@ -30,7 +34,7 @@
   background-position-y: 100%;
   .heart__empty {
     opacity: 0;
-    transition-duration: 220ms;
+    transition-duration: 1000ms;
   }
 }
 .like_position_1 {

@@ -13,6 +13,7 @@
   animation: loading-fade 750ms;
   animation-delay: 2250ms;
   animation-fill-mode: forwards;
+  cursor: wait;
 
   &::after {
     content: "";
