@@ -1,11 +1,21 @@
 @use "../abstracts" as *;
 
 .location {
+  text-align: center;
   position: relative;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   background-color: #eaeaea;
+  padding: 15.5px;
+  input{
+    max-width: 120px;
+    border: none;
+    color: black;
+    font-size: $fontsize_3;
+    font-weight: $fontweight_3;
+    background-color: inherit;
+  }
 }
+

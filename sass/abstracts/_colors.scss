@@ -7,9 +7,8 @@ $purple-1: #ff79da;
 $purple-2: #9356dc;
 /*** gradiant***/
 $gradiant-color-1: linear-gradient(
-  193.33deg,
-  $purple-2 -11.5%,
-  $purple-1 124%
+  $purple-1,
+  $purple-2 
 );
 $gradiant-like-button: linear-gradient(
   transparent 50%,

@@ -38,7 +38,7 @@ a {
   min-width: 186px;
   height: 50px;
   padding: 0 25px;
-  background: linear-gradient(193.33deg, #9356dc -11.5%, #ff79da 124%);
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
   color: white;
   font-size: 16px;
@@ -111,6 +111,7 @@ a {
   font-weight: 500;
   width: 80px;
 }
+
 /**** loader ****/
 .loader {
   position: fixed;
@@ -142,7 +143,7 @@ a {
   font-family: "Shrikhand", serif;
   font-size: 50px;
   font-weight: 400;
-  background-image: linear-gradient(193.33deg, #9356dc -11.5%, #ff79da 124%);
+  background-image: linear-gradient(#ff79da, #9356dc);
   color: transparent;
   background-clip: text;
 }
@@ -637,6 +638,11 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 50px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .selection__cards {
     gap: 50px 100px;
   }
 }
@@ -652,12 +658,18 @@ a {
     padding-bottom: 0;
   }
 }
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 1 33%;
+    padding-bottom: 0;
+  }
+}
 .card__photo {
   border-radius: 15px 15px 0px 0px;
   height: 174px;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .card__photo {
     max-width: 500px;
   }
@@ -693,7 +705,7 @@ a {
 .step {
   padding: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .step {
     display: flex;
     justify-content: center;
@@ -714,7 +726,10 @@ a {
   gap: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
-@media (min-width: 768px) {
+.step__card:hover .icons {
+  color: #9356dc;
+}
+@media (min-width: 1024px) {
   .step__card {
     width: 100%;
     display: flex;
@@ -738,6 +753,11 @@ a {
 }
 @media (min-width: 768px) {
   .step__number {
+    left: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .step__number {
     position: relative;
     left: -0.75rem;
   }
@@ -746,18 +766,24 @@ a {
   font-size: 18px;
   color: #7e7e7e;
 }
-.step:hover .icons {
-  color: #9356dc;
-}
 
 .location {
+  text-align: center;
   position: relative;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   background-color: #eaeaea;
+  padding: 15.5px;
+}
+.location input {
+  max-width: 120px;
+  border: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: inherit;
 }
 
 .tagline {
@@ -776,6 +802,11 @@ a {
 @media (min-width: 768px) {
   .tagline__main {
     max-width: none;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .tagline__main {
     font-size: 40px;
   }
 }
@@ -854,7 +885,7 @@ a {
 .footer__li {
   padding-bottom: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer__li {
     padding: 0;
   }
@@ -912,6 +943,11 @@ header {
   margin: auto;
   max-width: 1080px;
   padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .container-1 {
+    padding: 0 50px;
+  }
 }
 
 .container-2 {

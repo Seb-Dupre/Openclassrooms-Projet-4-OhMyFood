@@ -10,7 +10,7 @@
 .restaurant {
   display: flex;
   justify-content: space-between;
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     justify-content: center;
     gap: 24px;
   }
@@ -22,7 +22,7 @@
   }
 }
 .courses {
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     justify-content: center;

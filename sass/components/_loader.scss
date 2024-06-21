@@ -33,7 +33,7 @@
     background-image: $gradiant-color-1;
     color: transparent;
     background-clip: text;
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       font-size: $fontloader_2;
     }
   }

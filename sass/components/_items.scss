@@ -15,7 +15,7 @@
     animation-name: card-show-up;
     animation-duration: 750ms;
     animation-fill-mode: forwards;
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       min-width: 634px;
     }
     @keyframes card-show-up {
@@ -33,7 +33,6 @@
     }
 
     .items__content {
-      
       overflow: hidden;
       padding: 13.5px;
       width: 100%;

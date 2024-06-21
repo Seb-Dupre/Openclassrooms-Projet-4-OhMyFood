@@ -12,8 +12,11 @@
     max-width: 275px;
     font-size: $fontsize_7;
     font-weight: $fontweight_4;
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       max-width: none;
+      font-size: $fontsize_7;
+    }
+    @media (min-width: $desktop) {
       font-size: $fontsize_8;
     }
   }
@@ -24,7 +27,7 @@
     font-size: $fontsize_5;
     font-weight: $fontweight_1;
     color: #353535;
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       max-width: none;
     }
   }
